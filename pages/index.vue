@@ -12,7 +12,6 @@
 
 
 const loaded = ref(false);
-const houses = computed(() => useHouses())
 
 const isLoaded = () => loaded.value = true;
 
