@@ -31,6 +31,5 @@ export default defineNuxtConfig({
       { hid: 'og:image', property: 'og:image', content: process.env.baseUrl + "/meta.png"},],
     }
   },
-
   modules: ["@nuxt/image"]
 })
