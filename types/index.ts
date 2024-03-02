@@ -1,4 +1,4 @@
-export type House = {
+export type Game = {
     name: string,
     rating: number,
     description: string,
