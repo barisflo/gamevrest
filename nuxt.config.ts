@@ -3,9 +3,14 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
   image: {
-    staticFilename: '[publicPath]/[name]-[hash][ext]',
-    provider: '',
+    // staticFilename: '[publicPath]/[name]-[hash][ext]',
+    // provider: '',
     dir: 'public/images',
+  },
+  runtimeConfig: {
+    public: {
+      baseURL: '/'
+    }
   },
   postcss: {
     plugins: {
