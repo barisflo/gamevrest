@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   ssr: false,
   image: {
+    provider: process.env.VERCEL_ENV ? 'vercel' : 'ipx',
     dir: 'assets/images',
   },
   postcss: {
@@ -32,5 +33,6 @@ export default defineNuxtConfig({
       { hid: 'og:image', property: 'og:image', content: process.env.baseUrl + "/meta.png"},],
     }
   },
+  
   modules: ["@nuxt/image"]
 })
