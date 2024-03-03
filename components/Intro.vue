@@ -1,5 +1,5 @@
 <template>
-<div class="mb-6">
+<div class="mb-6  min-w-full px-6 lg:px-24">
             <div class="text-center pb-3 md:pb-3">
                 <NuxtImg
                 class="m-auto"

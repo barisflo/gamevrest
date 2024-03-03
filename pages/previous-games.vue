@@ -1,9 +1,24 @@
+
+import { GameCard } from '#build/components';
+
+import { CardSk } from '#build/components';
 <template>
-<main class="w-full max-w-5xl mx-auto p-6">
-    <div class="max-w-[185rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-        <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
-            <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">Coming soon</h2>
-            <p class="mt-1 text-gray-600 dark:text-gray-400">We&apos;re building something great !</p>
+<main class="w-full max-w-5xl mx-auto container">
+    <div class="p-6 grid grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-4">
+
+      <GameCard img="/images/proxima.png" link="https://www.youtube.com/watch?v=HJnT_nsFjWY&ab_channel=Baris" title="Proxima Cities" year="2020"             
+      desc="Augmented reality city, on mobile application"
+            />
+      <GameCard img="/images/BarrierSquad.png" link="https://gamepipe.io/@barisf/barrier-squad" title="Barrier Squad" year="2019"
+            desc="Mobile Game, tower defense like"
+            />
+      <GameCard img="/images/PCRDefender.png" link="https://gamepipe.io/@barisf/pcr-defender" title="PCR Defender" year="2015"
+            desc="Promotional video game for C2i santé"
+            />
+    </div>
+    <div class="max-w-[185rem] mx-auto mt-4">
+        <div class="max-w-2xl mx-auto text-center">
+            <h2 class="text-2xl font-bold md:text-2xl md:leading-tight dark:text-white">Check out our lastest game</h2>
             <a href="/"><div class="w-[140px] mx-auto my-5 p-2 h-12 bg-primary text-2xl font-bold text-center rounded-md text-white">
                 Home</div></a>
         </div>

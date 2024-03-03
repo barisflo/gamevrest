@@ -1,5 +1,5 @@
 <template>
-    <main className="flex flex-col items-center justify-between px-6 md:px-24 py-2">
+    <main className="flex flex-col items-center justify-between">
         <ClientOnly>
             <!-- <div class="h-[320]" v-if="!loaded">coucou</div> -->
         </ClientOnly>

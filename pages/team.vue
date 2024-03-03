@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full max-w-5xl mx-auto flex flex-col justify-center">
+    <div class="w-full max-w-5xl mx-auto flex flex-col justify-center mt-4">
         <div class="max-w-[185rem] px-4 sm:px-6 lg:px-8 mx-auto">
             <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
                 <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">Our Team</h2>
@@ -22,7 +22,7 @@
                             </h3> -->
 
                             <p class="mt-1 text-xs uppercase text-gray-500">
-                                Roi de la montagne
+                                Game Designer
                             </p>
                         </div>
                     </div>
@@ -34,13 +34,13 @@
                     <div class="sm:flex sm:flex-col sm:h-full">
                         <div>
                             <h3 class="font-medium text-gray-800 dark:text-gray-200">
-                                Gaspou le BG
+                                Gaspard Thirion
                             </h3>
                             <!-- <h3 class="font-medium text-gray-500 dark:text-gray-200">
                                 이승연
                             </h3> -->
                             <p class="mt-1 text-xs uppercase text-gray-500">
-                                Technico crackito
+                                Programmer
                             </p>
                         </div>
                     </div>
@@ -61,4 +61,12 @@
 
             </div>
     </div>
-</div></template>
+    <div class="max-w-[185rem] mx-auto mt-8">
+        <div class="max-w-2xl mx-auto text-center">
+            <h2 class="text-2xl font-bold md:text-2xl md:leading-tight dark:text-white">Check out our lastest game</h2>
+            <a href="/"><div class="w-[140px] mx-auto my-5 p-2 h-12 bg-primary text-2xl font-bold text-center rounded-md text-white">
+                Home</div></a>
+        </div>
+    </div>
+</div>
+</template>
