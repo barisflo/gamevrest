@@ -3,8 +3,8 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
   image: {
-    staticFilename: '[publicPath]/[name]-[hash][ext]',
-    provider: 'ipx',
+    // staticFilename: '[publicPath]/[name]-[hash][ext]',
+    // provider: 'ipx',
     dir: 'public/images',
   },
   postcss: {
