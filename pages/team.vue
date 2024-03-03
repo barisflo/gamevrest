@@ -9,7 +9,7 @@
             <div class="grid grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
 
                 <div class="grid sm:flex sm:items-center gap-y-3 gap-x-4">
-                    <NuxtImg width={80} height={80} class="rounded-lg w-24 h-24 shadow" src="/team/fb.jpeg"
+                    <NuxtImg width={80} height={80} class="rounded-lg w-24 h-24 shadow" src="fb.jpeg"
                         alt="Florent Baris" />
 
                     <div class="sm:flex sm:flex-col sm:h-full">
@@ -29,7 +29,7 @@
                 </div>
 
                 <div class="grid sm:flex sm:items-center gap-y-3 gap-x-4">
-                    <NuxtImg width={80} height={80} class="rounded-lg w-24 h-24 shadow" src="/team/gaspou.jpg" alt="Gaspard Thirion" />
+                    <NuxtImg width={80} height={80} class="rounded-lg w-24 h-24 shadow" src="gaspou.jpg" alt="Gaspard Thirion" />
 
                     <div class="sm:flex sm:flex-col sm:h-full">
                         <div>

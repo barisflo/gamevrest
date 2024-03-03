@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   image: {
     // staticFilename: '[publicPath]/[name]-[hash][ext]',
     // provider: '',
-    dir: 'public/images',
+    // dir: 'public/images',
   },
   runtimeConfig: {
     public: {
