@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   image: {
     staticFilename: '[publicPath]/[name]-[hash][ext]',
     provider: 'ipx',
-    dir: 'assets/images',
+    dir: 'public/images',
   },
   postcss: {
     plugins: {
