@@ -2,9 +2,9 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
-  ssr: false,
   image: {
-    provider: process.env.VERCEL_ENV ? 'vercel' : 'ipx',
+    staticFilename: '[publicPath]/[name]-[hash][ext]',
+    provider: 'ipx',
     dir: 'assets/images',
   },
   postcss: {
@@ -34,5 +34,5 @@ export default defineNuxtConfig({
     }
   },
   
-  modules: ["@nuxt/image"]
+  modules: ["@nuxt/image", '@nuxt/image-edge']
 })

@@ -23,6 +23,7 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
+    "@nuxt/image-edge": "^1.3.0-28479476.921d3b7",
     "vue3-spline": "^1.0.0"
   }
 }
