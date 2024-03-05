@@ -1,9 +1,6 @@
 
-import { GameCard } from '#build/components';
-
-import { CardSk } from '#build/components';
 <template>
-<main class="w-full max-w-5xl mx-auto container">
+<main class="w-full max-w-5xl mx-auto container flex flex-col justify-center">
     <div class="p-6 grid grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-4">
 
       <GameCard img="/images/proxima.png" link="https://www.youtube.com/watch?v=HJnT_nsFjWY&ab_channel=Baris" title="Proxima Cities" year="2020"             

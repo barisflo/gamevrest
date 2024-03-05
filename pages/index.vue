@@ -1,9 +1,10 @@
 <template>
-    <main className="flex flex-col items-center justify-between">
+    <main className="flex flex-col items-center">
         <ClientOnly>
             <!-- <div class="h-[320]" v-if="!loaded">coucou</div> -->
         </ClientOnly>
-        <Intro style="z-index: 1;" />  
+        <Intro style="z-index: 1;" />
+        <Main style="z-index: 1;" />  
 
     </main>
 </template>
