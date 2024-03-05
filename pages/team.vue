@@ -46,14 +46,14 @@
                     </div>
                 </div>
 
-                <div class="grid sm:flex sm:items-center gap-y-3 gap-x-4">
+                <div class="grid sm:flex sm:items-center gap-y-3 gap-x-4 mt-4">
                     <div class="rounded-lg w-24 h-24 bg-slate-200 shadow" />
 
                     <div>
                         <h3 class="font-medium text-gray-800 dark:text-gray-200">
                             You ?
                         </h3>
-                        <a class="text-sm text-blue-600 decoration-2 hover:underline dark:text-blue-500" href="/soon">
+                        <a class="text-sm text-blue-600 decoration-2 hover:underline dark:text-blue-500" href="/contact">
                             Join us
                         </a>
                     </div>
