@@ -61,7 +61,7 @@
                     </div>
                 </a>
                 <a
-                    class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800">
+                    class="flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800">
                     <Mailto mail="gamevrest@gmail.com">
                         <div class="p-4 md:p-5">
                             <div class="flex">
@@ -86,6 +86,7 @@
                         </div>
                     </Mailto>
                 </a>
+                <div></div>
                 <a href="/">
                     <div
                         class="w-[140px] mx-auto my-5 p-2 h-12 bg-primary text-2xl font-bold text-center rounded-md text-white">

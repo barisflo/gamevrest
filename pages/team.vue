@@ -29,7 +29,8 @@
                 </div>
 
                 <div class="grid sm:flex sm:items-center gap-y-3 gap-x-4">
-                    <NuxtImg width={80} height={80} class="rounded-lg w-24 h-24 shadow" src="gaspou.jpg" alt="Gaspard Thirion" />
+                    <NuxtImg width={80} height={80} class="rounded-lg w-24 h-24 shadow" src="gaspou.jpg"
+                        alt="Gaspard Thirion" />
 
                     <div class="sm:flex sm:flex-col sm:h-full">
                         <div>
@@ -53,20 +54,30 @@
                         <h3 class="font-medium text-gray-800 dark:text-gray-200">
                             You ?
                         </h3>
-                        <a class="text-sm text-blue-600 decoration-2 hover:underline dark:text-blue-500" href="/contact">
+                        <a class="text-sm text-blue-600 decoration-2 hover:underline dark:text-blue-500"
+                            href="/contact">
                             Join us
                         </a>
                     </div>
                 </div>
 
             </div>
-    </div>
-    <div class="max-w-[185rem] mx-auto mt-8">
-        <div class="max-w-2xl mx-auto text-center">
-            <h2 class="text-2xl font-bold md:text-2xl md:leading-tight dark:text-white">Check out our lastest game</h2>
-            <a href="/"><div class="w-[140px] mx-auto my-5 p-2 h-12 bg-primary text-2xl font-bold text-center rounded-md text-white">
-                Home</div></a>
+        </div>
+        <a href="/contact">
+            <div
+                class="w-[160px] mx-auto mt-8 p-2 h-12 bg-white border-primary border text-2xl font-bold text-center rounded-md text-primary">
+                Contact us</div>
+        </a>
+        <div class="max-w-[185rem] mx-auto mt-8">
+            <div class="max-w-2xl mx-auto text-center">
+                <h2 class="text-2xl font-bold md:text-2xl md:leading-tight dark:text-white">Check out our lastest game
+                </h2>
+                <a href="/">
+                    <div
+                        class="w-[140px] mx-auto my-5 p-2 h-12 bg-primary text-2xl font-bold text-center rounded-md text-white">
+                        Home</div>
+                </a>
+            </div>
         </div>
     </div>
-</div>
 </template>
