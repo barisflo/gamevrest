@@ -2,22 +2,26 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
+
   image: {
     // staticFilename: '[publicPath]/[name]-[hash][ext]',
     // provider: '',
     // dir: 'public/images',
   },
+
   runtimeConfig: {
     public: {
       baseURL: '/'
     }
   },
+
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
+
   app : {
     head: {
       title: "Gamevrest",
@@ -38,6 +42,7 @@ export default defineNuxtConfig({
       { hid: 'og:image', property: 'og:image', content: process.env.baseUrl + "/meta.png"},],
     }
   },
-  
-  modules: ["@nuxt/image", '@nuxt/image-edge']
+
+  modules: ["@nuxt/image", '@nuxt/image-edge'],
+  compatibilityDate: '2024-08-20',
 })
