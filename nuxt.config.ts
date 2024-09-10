@@ -40,6 +40,12 @@ export default defineNuxtConfig({
       { hid: 'og:url', property: 'og:url', content: process.env.baseUrl },
       { hid: 'og:description', property: 'og:description', content: "Gamevrest Indie Game Studio by Florent Baris and Gaspard Thirion" },
       { hid: 'og:image', property: 'og:image', content: process.env.baseUrl + "/meta.png"},],
+        script: [
+          {
+            src: 'https://www.googletagmanager.com/gtag/js?id=G-8NXE8X8XZB',
+            async: true
+          }
+        ]
     }
   },
 

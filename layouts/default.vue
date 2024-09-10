@@ -7,3 +7,16 @@
       <Footer />
     </div>
   </template>
+
+<script setup>
+import { onMounted } from 'vue'
+
+onMounted(() => {
+  window.dataLayer = window.dataLayer || []
+  function gtag() {
+    window.dataLayer.push(arguments)
+  }
+  gtag('js', new Date())
+  gtag('config', 'G-8NXE8X8XZB')
+})
+</script>

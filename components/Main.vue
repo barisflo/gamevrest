@@ -15,9 +15,6 @@
   </div>
 </template>
 
-<script>
-</script>
-
 <style scoped lang="scss">
 .bg-cake {
   // background: url("cake1.png");
