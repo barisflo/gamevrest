@@ -70,7 +70,7 @@
         </a>
         <div class="max-w-[185rem] mx-auto mt-8">
             <div class="max-w-2xl mx-auto text-center">
-                <h2 class="text-2xl font-bold md:text-2xl md:leading-tight dark:text-white">Check out our lastest game
+                <h2 class="text-2xl font-bold md:text-2xl md:leading-tight dark:text-white">Check out our latest game
                 </h2>
                 <a href="/">
                     <div
