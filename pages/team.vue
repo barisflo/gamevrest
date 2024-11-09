@@ -47,6 +47,23 @@
                     </div>
                 </div>
 
+                
+                <div class="grid sm:flex sm:items-center gap-y-3 gap-x-4">
+                    <NuxtImg width={80} height={80} class="rounded-lg w-24 h-24 shadow" src="mik.jpeg"
+                        alt="Gaspard Thirion" />
+
+                    <div class="sm:flex sm:flex-col sm:h-full">
+                        <div>
+                            <h3 class="font-medium text-gray-800 dark:text-gray-200">
+                                Mickael Scherlen
+                            </h3>
+                            <p class="mt-1 text-xs uppercase text-gray-500">
+                                Artist
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="grid sm:flex sm:items-center gap-y-3 gap-x-4 mt-4">
                     <div class="rounded-lg w-24 h-24 bg-slate-200 shadow" />
 

@@ -10,7 +10,7 @@
             <a href="https://store.steampowered.com/app/2884670/Premier_Servi/?beta=0"
                 class="text-xl text-gray-900 mb-4"> Switch • Steam</a>
             <div class="max-w-3xl mx-auto">
-                <p class="text-xl text-gray-500 mb-4 mt-2" data-aos="zoom-y-out" data-aos-delay="150">Developed by 2
+                <p class="text-xl text-gray-500 mb-4 mt-2" data-aos="zoom-y-out" data-aos-delay="150">Developed by 3
                     young french hobbyist, Premier Servi (First Arrived, First Served) is a colorful Party Game
                     featuring delicious French Pastry !</p>
                 <div class="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out"
