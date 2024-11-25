@@ -49,7 +49,7 @@
 
                 
                 <div class="grid sm:flex sm:items-center gap-y-3 gap-x-4">
-                    <NuxtImg width={80} height={80} class="rounded-lg w-24 h-24 shadow" src="mik.jpeg"
+                    <NuxtImg width={80} height={80} class="rounded-lg w-24 h-24 shadow" src="mik.jpg"
                         alt="Gaspard Thirion" />
 
                     <div class="sm:flex sm:flex-col sm:h-full">
