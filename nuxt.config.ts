@@ -27,7 +27,7 @@ export default defineNuxtConfig({
       title: "Gamevrest",
       meta: [{
         hid: 'description', name: 'description',
-        content: "Gamevrest Studio by Florent Baris and Gaspard Thirion"
+        content: "Gamevrest Studio by Florent Baris, Gaspard Thirion and Mickaël Scherlen"
       },
       { hid: 'copyright', name: 'copyright', content: "Gamevrest" },
       { hid: 'language', name: 'language', content: "EN" },
@@ -38,7 +38,7 @@ export default defineNuxtConfig({
       { hid: 'og:title', property: 'og:title', content: "Gamevrest" },
       { hid: 'og:site_name', property: 'og:site_name', content: "Gamevrest" },
       { hid: 'og:url', property: 'og:url', content: process.env.baseUrl },
-      { hid: 'og:description', property: 'og:description', content: "Gamevrest Indie Game Studio by Florent Baris and Gaspard Thirion" },
+      { hid: 'og:description', property: 'og:description', content: "Gamevrest Indie Game Studio by Florent Baris, Gaspard Thirion and Mickaël Scherlen" },
       { hid: 'og:image', property: 'og:image', content: process.env.baseUrl + "/meta.png"},],
         script: [
           {
@@ -50,5 +50,4 @@ export default defineNuxtConfig({
   },
 
   modules: ["@nuxt/image", '@nuxt/image-edge'],
-  compatibilityDate: '2024-08-20',
 })

@@ -28,7 +28,7 @@
   background-image: url('/cake1.png');
   background-repeat: repeat;
   background-size: 50%;
-  opacity: 0.5;
+  opacity: 0.8;
   position: absolute;
   top: 0;
   left: 0;
