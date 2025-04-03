@@ -28,7 +28,7 @@
 <style scoped>
 .text-shadow-element {
     color: transparent;
-    filter: drop-shadow(3px 1px 1px rgba(0, 0, 0, 0.6));
+    filter: drop-shadow(3px 1px 1px rgba(0, 0, 0, 0.5));
 }
 
 .text-shadow-sm {

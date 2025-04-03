@@ -7,7 +7,7 @@
                             <a class="flex-none text-xl font-semibold dark:text-white" href="/" aria-label="Brand">
                                 <NuxtImg src="/logo.png" width="50" />
                             </a>
-                            <p class="text-xs text-gray-600 sm:text-sm dark:text-gray-400">©2024 Gamevrest</p>
+                            <p class="text-xs text-gray-600 sm:text-sm dark:text-gray-400">©{{ new Date().getFullYear() }} Gamevrest</p>
                         </div>
 
                     <div class="ml-4 space-x-4 text-md font-bold">
