@@ -2,9 +2,23 @@
     <div class="mb-6 min-w-full px-6 lg:px-24">
         <div class="text-center pb-3 md:pb-3">
             <NuxtImg class="m-auto object-cover object-center transform scale-110 hover:scale-125 transition-transform ease-in-out duration-300" src="/PremierServi.png" alt="Gamevrest logo" width="600" />
-                <h1 class="text-3xl md:text-4xl font-extrabold leading-tighter tracking-tighter pb-2 mb-4 bg-clip-text text-transparent bg-gradient-to-br from-yellow-200 to-rose-300 top-0 left-0 right-0 text-shadow-element">
-                    Eat the cake before your friends without getting spotted !
-                </h1>
+            
+            <!-- YouTube Trailer Video -->
+            <div class="video-wrapper my-8">
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/uLVhjcnU13Q" 
+                        title="Premier Servi Trailer" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            
+            <h1 class="text-3xl md:text-4xl font-extrabold leading-tighter tracking-tighter pb-2 mb-4 bg-clip-text text-transparent bg-gradient-to-br from-yellow-200 to-rose-300 top-0 left-0 right-0 text-shadow-element">
+                Eat the cake before your friends without getting spotted !
+            </h1>
             <a href="https://store.steampowered.com/app/2884670/Premier_Servi/?beta=0">
                 <NuxtImg class="p-2 m-auto hover:scale-105 ease-in-out duration-100" src="/steam.png" alt="Steam wishlist" width="300" />
             </a>
@@ -17,9 +31,6 @@
                 <div class="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out"
                     data-aos-delay="300">
                 </div>
-                <!-- <div>
-                   Game studio by Florent Baris and Gaspard Thirion
-                </div> -->
             </div>
         </div>
     </div>
@@ -28,10 +39,45 @@
 <style scoped>
 .text-shadow-element {
     color: transparent;
-    filter: drop-shadow(3px 1px 1px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(3px 1px 1px rgba(0, 0, 0, 0.6));
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
+    text-stroke: 1px rgba(0, 0, 0, 0.5);
 }
 
 .text-shadow-sm {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.video-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Perfect 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@media (max-width: 840px) {
+    .video-wrapper {
+        max-width: 100%;
+        margin: 0 auto;
+    }
 }
 </style>
