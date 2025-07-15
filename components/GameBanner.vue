@@ -148,7 +148,7 @@
 }
 
 .game-preview {
-  width: 180px;
+  width: 320px;
   height: auto;
   position: relative;
 }
@@ -231,7 +231,7 @@
   }
   
   .game-preview {
-    width: 160px;
+    width: 240px;
     margin: 0 auto;
   }
   
