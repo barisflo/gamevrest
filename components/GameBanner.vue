@@ -25,7 +25,7 @@
               class="preview-link"
             >
               <img 
-                src="/messy-kingdom-screenshot.png" 
+                src="/Kingdom/screenshotclean.png" 
                 alt="Messy Kingdom Screenshot" 
                 class="screenshot-image"
               />
