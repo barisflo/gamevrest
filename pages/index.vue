@@ -3,6 +3,7 @@
         <ClientOnly>
             <!-- <div class="h-[320]" v-if="!loaded">coucou</div> -->
         </ClientOnly>
+        <GameBanner style="z-index: 1;" />
         <Intro style="z-index: 1;" />
         <Main style="z-index: 1;" />  
     </main>
