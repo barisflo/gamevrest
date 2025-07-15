@@ -104,9 +104,9 @@
 }
 
 .banner-title {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   font-weight: 700;
-  color: #374151;
+  color: #111827;
   margin: 0 0 0.5rem 0;
   text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
 }
@@ -133,9 +133,9 @@
 }
 
 .banner-description {
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   line-height: 1.5;
-  color: #475569;
+  color: #1f2937;
   margin: 0;
   font-weight: 500;
   text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
@@ -171,10 +171,10 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  color: #374151;
+  color: #111827;
   text-decoration: none;
   font-weight: 800;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   transition: all 0.3s ease;
   text-shadow: 0 2px 4px rgba(255, 255, 255, 0.8);
 }
@@ -185,7 +185,7 @@
 }
 
 .link-text {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 800;
 }
 
