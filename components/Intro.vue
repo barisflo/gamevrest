@@ -41,7 +41,7 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
 }
 
 /* Simplified mobile styling */
@@ -51,7 +51,7 @@
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
         /* Remove any potential outline conflicts on mobile */
         -webkit-text-stroke: none;
         text-stroke: none;
