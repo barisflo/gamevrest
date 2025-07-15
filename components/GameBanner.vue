@@ -13,20 +13,17 @@
           <p class="banner-description">
             The fate of the realm lies in your inventory. You'd better start organizing it.
           </p>
-          <div class="banner-features">
-            <div class="feature-tag">Puzzle</div>
-            <div class="feature-tag">Unity</div>
-            <div class="feature-tag">Free</div>
-          </div>
         </div>
         
         <div class="banner-center">
           <div class="game-preview">
-            <img 
-              src="/messy-kingdom-screenshot.png" 
-              alt="Messy Kingdom Screenshot" 
-              class="screenshot-image"
-            />
+            <div class="preview-container">
+              <img 
+                src="/messy-kingdom-screenshot.png" 
+                alt="Messy Kingdom Screenshot" 
+                class="screenshot-image"
+              />
+            </div>
           </div>
         </div>
 
@@ -37,7 +34,7 @@
             rel="noopener noreferrer"
             class="play-button"
           >
-            <span class="button-text">🎮 Play Now</span>
+            <span class="button-text">Try now</span>
             <div class="button-glow"></div>
           </a>
         </div>
@@ -56,24 +53,41 @@
 }
 
 .game-banner {
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.9) 0%,
-    rgba(249, 250, 251, 0.85) 100%
-  );
-  border: 1px solid rgba(229, 231, 235, 0.8);
-  border-radius: 12px;
-  padding: 1.5rem 2rem;
+  background-image: url('/messy-kingdom-background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  padding: 2rem 2.5rem;
   position: relative;
   margin: 0;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.game-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.95) 0%,
+    rgba(248, 250, 252, 0.90) 30%,
+    rgba(241, 245, 249, 0.85) 70%,
+    rgba(226, 232, 240, 0.80) 100%
+  );
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  z-index: 1;
 }
 
 .banner-content {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
-  gap: 2rem;
+  gap: 2.5rem;
   align-items: center;
   position: relative;
   z-index: 2;
@@ -84,46 +98,32 @@
 .banner-left {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.2rem;
 }
 
 .game-logo {
-  max-width: 250px;
+  max-width: 280px;
 }
 
 .logo-image {
   width: 100%;
   height: auto;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
+  border-radius: 12px;
+  transition: transform 0.4s ease;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
 }
 
 .logo-image:hover {
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 
 .banner-description {
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #6b7280;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #475569;
   margin: 0;
-}
-
-.banner-features {
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-}
-
-.feature-tag {
-  background: linear-gradient(135deg, #6366f1, #8b5cf6);
-  color: white;
-  padding: 0.25rem 0.75rem;
-  border-radius: 12px;
-  font-size: 0.8rem;
   font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
 }
 
 .banner-center {
@@ -133,22 +133,34 @@
 }
 
 .game-preview {
-  width: 200px;
+  width: 220px;
   height: auto;
   position: relative;
+}
+
+.preview-container {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  padding: 8px;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .screenshot-image {
   width: 100%;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.4s ease;
 }
 
-.screenshot-image:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+.preview-container:hover .screenshot-image {
+  transform: scale(1.02);
 }
 
 .banner-right {
@@ -160,22 +172,25 @@
 .play-button {
   display: inline-block;
   position: relative;
-  background: linear-gradient(135deg, #059669, #0d9488);
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
   color: white;
-  padding: 0.75rem 1.5rem;
-  border-radius: 25px;
+  padding: 1rem 2rem;
+  border-radius: 30px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);
+  font-size: 1.1rem;
+  transition: all 0.4s ease;
+  box-shadow: 0 6px 20px rgba(139, 92, 246, 0.3);
   overflow: hidden;
   border: none;
+  text-transform: lowercase;
+  letter-spacing: 0.5px;
 }
 
 .play-button:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 6px 16px rgba(5, 150, 105, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(139, 92, 246, 0.4);
+  background: linear-gradient(135deg, #7c3aed, #6d28d9);
 }
 
 .button-text {
@@ -189,8 +204,8 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-  transition: left 0.6s ease;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
+  transition: left 0.8s ease;
 }
 
 .play-button:hover .button-glow {
@@ -200,12 +215,12 @@
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .game-banner {
-    padding: 1rem 1.5rem;
+    padding: 1.5rem 2rem;
   }
   
   .banner-content {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 2rem;
     text-align: center;
   }
   
@@ -214,54 +229,45 @@
   }
   
   .game-logo {
-    max-width: 200px;
+    max-width: 240px;
     margin: 0 auto;
   }
   
   .game-preview {
-    width: 180px;
+    width: 200px;
     margin: 0 auto;
   }
   
   .banner-description {
-    font-size: 0.9rem;
-  }
-  
-  .banner-features {
-    justify-content: center;
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 480px) {
   .game-banner {
-    padding: 1rem;
+    padding: 1.2rem 1.5rem;
     margin: 0 0.5rem;
   }
   
   .banner-content {
-    gap: 1rem;
+    gap: 1.5rem;
   }
   
   .game-logo {
-    max-width: 160px;
+    max-width: 200px;
   }
   
   .game-preview {
-    width: 150px;
+    width: 180px;
   }
   
   .play-button {
-    padding: 0.6rem 1.2rem;
-    font-size: 0.9rem;
+    padding: 0.8rem 1.6rem;
+    font-size: 1rem;
   }
   
   .banner-description {
-    font-size: 0.85rem;
-  }
-  
-  .feature-tag {
-    font-size: 0.75rem;
-    padding: 0.2rem 0.6rem;
+    font-size: 0.9rem;
   }
 }
 </style>
