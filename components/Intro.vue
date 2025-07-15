@@ -3,7 +3,7 @@
         <div class="text-center pb-3 md:pb-3">
             <!-- <NuxtImg class="m-auto object-cover object-center transform scale-110 hover:scale-125 transition-transform ease-in-out duration-300" src="/PremierServi.png" alt="Gamevrest logo" width="600" /> -->
             <!-- YouTube Trailer Video -->
-            <h1 class="text-3xl md:text-4xl my-6 font-extrabold leading-tighter tracking-tighter pb-2 bg-clip-text text-transparent bg-gradient-to-br from-yellow-200 to-rose-300 top-0 left-0 right-0 text-shadow-element">
+            <h1 class="text-2xl md:text-4xl my-6 font-extrabold leading-tight md:leading-tighter tracking-tighter pb-2 main-title">
                 Eat the cake before your friends without getting spotted !
             </h1>
             <div class="video-wrapper">
@@ -36,11 +36,27 @@
 </template>
 
 <style scoped>
-.text-shadow-element {
+.main-title {
+    background: linear-gradient(45deg, #fbbf24, #f59e0b, #ec4899, #be185d);
+    -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
-    filter: drop-shadow(3px 1px 1px rgba(0, 0, 0, 0.6));
-    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
-    text-stroke: 1px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Simplified mobile styling */
+@media (max-width: 768px) {
+    .main-title {
+        background: linear-gradient(45deg, #fbbf24, #ec4899);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+        /* Remove any potential outline conflicts on mobile */
+        -webkit-text-stroke: none;
+        text-stroke: none;
+        filter: none;
+    }
 }
 
 .text-shadow-sm {
