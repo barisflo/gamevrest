@@ -59,7 +59,7 @@
 }
 
 .game-banner {
-  background-image: url('/kingdom/bg_foret.png');
+  background-image: url('/Kingdom/bg_foret.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
