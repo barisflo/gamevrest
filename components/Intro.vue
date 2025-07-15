@@ -4,7 +4,7 @@
             <!-- <NuxtImg class="m-auto object-cover object-center transform scale-110 hover:scale-125 transition-transform ease-in-out duration-300" src="/PremierServi.png" alt="Gamevrest logo" width="600" /> -->
             <!-- YouTube Trailer Video -->
             <h1 class="text-2xl md:text-4xl my-6 font-extrabold leading-tight md:leading-tighter tracking-tighter pb-2 main-title">
-                Serve the perfect cake and delight your friends !
+                Eat the cake before your friends without getting spotted !
             </h1>
             <div class="video-wrapper">
                 <div class="video-container">
