@@ -59,7 +59,7 @@
 }
 
 .game-banner {
-  background-image: url('/bg_foret.png');
+  background-image: url('/damierbakery.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
