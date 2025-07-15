@@ -1,6 +1,7 @@
 <template>
   <div class="game-banner-wrapper">
-    <div class="game-banner">
+    <div class="game-banner" :style="{ backgroundImage: `url(${bgImage})` }">
+      <img src="/bg_foret.png" alt="" class="background-image" />
       <div class="banner-content">
         <div class="banner-left">
           <div class="game-logo">
@@ -49,6 +50,11 @@
   </div>
 </template>
 
+<script setup>
+// Using public folder image
+const bgImage = '/bg_foret.png'
+</script>
+
 <style scoped>
 .game-banner-wrapper {
   width: 100%;
@@ -59,7 +65,6 @@
 }
 
 .game-banner {
-  background-image: url('/bg_foret.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -68,6 +73,16 @@
   margin: 0;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
 .game-banner::before {
