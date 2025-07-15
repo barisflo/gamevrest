@@ -3,7 +3,6 @@
     <div class="game-banner">
       <div class="banner-content">
         <div class="banner-left">
-          <h3 class="banner-title">Check out our new project !</h3>
           <div class="game-logo">
             <img 
               src="/messy-kingdom-header.png" 
@@ -11,6 +10,7 @@
               class="logo-image"
             />
           </div>
+          <h3 class="banner-title">Check out our new project !</h3>
           <p class="banner-description">
             The fate of the realm lies in your inventory. You'd better start organizing it.
           </p>
@@ -106,7 +106,7 @@
 }
 
 .game-logo {
-  max-width: 240px;
+  max-width: 320px;
 }
 
 .logo-image {
@@ -114,11 +114,16 @@
   height: auto;
   border-radius: 8px;
   transition: transform 0.3s ease;
-  filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.2));
+  filter: 
+    drop-shadow(0 8px 16px rgba(0, 0, 0, 0.4))
+    drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3))
+    contrast(1.2)
+    brightness(1.1);
+  transform: scale(1.1);
 }
 
 .logo-image:hover {
-  transform: scale(1.01);
+  transform: scale(1.12);
 }
 
 .banner-description {
@@ -164,36 +169,32 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  color: #8b5cf6;
+  color: #374151;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
+  font-weight: 800;
+  font-size: 1.1rem;
   transition: all 0.3s ease;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(4px);
-  border: 1px solid rgba(139, 92, 246, 0.2);
+  text-shadow: 0 2px 4px rgba(255, 255, 255, 0.8);
 }
 
 .play-link:hover {
-  color: #7c3aed;
-  background: rgba(255, 255, 255, 0.9);
-  transform: translateX(4px);
-  border-color: rgba(139, 92, 246, 0.4);
+  color: #1f2937;
+  transform: translateX(6px);
 }
 
 .link-text {
-  font-size: 1rem;
+  font-size: 1.1rem;
+  font-weight: 800;
 }
 
 .arrow {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  font-weight: 800;
   transition: transform 0.3s ease;
 }
 
 .play-link:hover .arrow {
-  transform: translateX(4px);
+  transform: translateX(6px);
 }
 
 /* Mobile Responsive */
@@ -213,7 +214,7 @@
   }
   
   .game-logo {
-    max-width: 200px;
+    max-width: 280px;
     margin: 0 auto;
   }
   
@@ -242,7 +243,7 @@
   }
   
   .game-logo {
-    max-width: 180px;
+    max-width: 240px;
   }
   
   .game-preview {
@@ -250,8 +251,15 @@
   }
   
   .play-link {
-    padding: 0.4rem 0.8rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
+  }
+  
+  .link-text {
+    font-size: 1rem;
+  }
+  
+  .arrow {
+    font-size: 1.2rem;
   }
   
   .banner-description {
