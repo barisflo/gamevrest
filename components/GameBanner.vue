@@ -59,7 +59,7 @@
 }
 
 .game-banner {
-  background-image: url('/damierbakery.png');
+  background-image: url('/bg_foret.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -79,11 +79,10 @@
   bottom: 0;
   background: linear-gradient(
     135deg,
-    rgba(255, 255, 255, 0.92) 0%,
-    rgba(248, 250, 252, 0.88) 50%,
-    rgba(241, 245, 249, 0.85) 100%
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.15) 50%,
+    rgba(255, 255, 255, 0.1) 100%
   );
-  backdrop-filter: blur(6px);
   z-index: 1;
 }
 
