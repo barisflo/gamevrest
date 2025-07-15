@@ -18,11 +18,18 @@
         
         <div class="banner-center">
           <div class="game-preview">
-            <img 
-              src="/messy-kingdom-screenshot.png" 
-              alt="Messy Kingdom Screenshot" 
-              class="screenshot-image"
-            />
+            <a 
+              href="https://barisflo.itch.io/messy-kingdom" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="preview-link"
+            >
+              <img 
+                src="/messy-kingdom-screenshot.png" 
+                alt="Messy Kingdom Screenshot" 
+                class="screenshot-image"
+              />
+            </a>
           </div>
         </div>
 
@@ -52,11 +59,11 @@
 }
 
 .game-banner {
-  background-image: url('/messy-kingdom-background.png');
+  background-image: url('/kingdom/bg_foret.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 1.2rem 2rem;
+  padding: 1rem 2rem;
   position: relative;
   margin: 0;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
@@ -155,10 +162,6 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.screenshot-image:hover {
-  transform: scale(1.02);
-}
-
 .banner-right {
   display: flex;
   justify-content: flex-end;
@@ -172,7 +175,7 @@
   color: #374151;
   text-decoration: none;
   font-weight: 800;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   transition: all 0.3s ease;
   text-shadow: 0 2px 4px rgba(255, 255, 255, 0.8);
 }
@@ -183,12 +186,12 @@
 }
 
 .link-text {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 800;
 }
 
 .arrow {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 800;
   transition: transform 0.3s ease;
 }
@@ -197,10 +200,20 @@
   transform: translateX(6px);
 }
 
+.preview-link {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.preview-link:hover .screenshot-image {
+  transform: scale(1.03);
+}
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .game-banner {
-    padding: 1rem 1.5rem;
+    padding: 0.8rem 1.5rem;
   }
   
   .banner-content {
@@ -234,7 +247,7 @@
 
 @media (max-width: 480px) {
   .game-banner {
-    padding: 0.8rem 1rem;
+    padding: 0.6rem 1rem;
     margin: 0 0.5rem;
   }
   
@@ -251,15 +264,15 @@
   }
   
   .play-link {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   
   .link-text {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   
   .arrow {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   
   .banner-description {
