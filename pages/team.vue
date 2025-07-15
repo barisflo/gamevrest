@@ -28,7 +28,7 @@
                     </div>
                 </div>
 
-                <div class="grid sm:flex sm:items-center gap-y-3 gap-x-4">
+                <!-- <div class="grid sm:flex sm:items-center gap-y-3 gap-x-4">
                     <NuxtImg width={80} height={80} class="rounded-lg w-24 h-24 shadow object-cover" src="gaspou.jpg"
                         alt="Gaspard Thirion" />
 
@@ -39,13 +39,13 @@
                             </h3>
                             <!-- <h3 class="font-medium text-gray-500 dark:text-gray-200">
                                 이승연
-                            </h3> -->
-                            <p class="mt-1 text-xs uppercase text-gray-500">
+                            </h3> --> -->
+                            <!-- <p class="mt-1 text-xs uppercase text-gray-500">
                                 Programmer
                             </p>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 
                 <div class="grid sm:flex sm:items-center gap-y-3 gap-x-4">
