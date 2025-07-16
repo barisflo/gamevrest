@@ -12,6 +12,9 @@
       <GameCard img="/images/PCRDefender.png" link="https://gamepipe.io/@barisf/pcr-defender" title="PCR Defender" year="2015"
             desc="Promotional video game for C2i santé"
             />
+      <GameCard img="https://img.itch.zone/aW1nLzE4MTgxODIxLmpwZw==/original/qnVuCM.jpg" link="https://barisflo.itch.io/" title="Indie Game Collection" year="2015-2024"
+            desc="Collection of indie games and interactive experiences on itch.io"
+            />
     </div>
     <div class="max-w-[185rem] mx-auto mt-4">
         <div class="max-w-2xl mx-auto text-center">
