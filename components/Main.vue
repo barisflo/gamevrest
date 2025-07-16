@@ -11,7 +11,7 @@
         <NuxtImg class="p-2 game-image" src="/bakery.png" alt="Premier Servi Tutorial" width="600" />
       </div>
       <div class="flex flex-wrap justify-center mt-4 text-gray-700 font-medium">
-        Indie Game studio Gamevrest by Florent Baris, Gaspard Thirion and Mickaël Scherlen
+        Indie Game studio Gamevrest by Florent Baris, <!-- Gaspard Thirion and --> Mickaël Scherlen
       </div>
     </div>
   </div>
