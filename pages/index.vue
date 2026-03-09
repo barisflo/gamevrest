@@ -1,8 +1,9 @@
 <template>
-    <main class="flex flex-col items-center checkered-background">
+    <main class="flex flex-col items-center w-full min-w-0 checkered-background">
         <ClientOnly>
             <!-- <div class="h-[320]" v-if="!loaded">coucou</div> -->
         </ClientOnly>
+        <ChristmasGameSection style="z-index: 1;" />
         <GameBanner style="z-index: 1;" />
         <Intro style="z-index: 1;" />
         <Main style="z-index: 1;" />  
