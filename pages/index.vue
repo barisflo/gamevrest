@@ -1,30 +1,11 @@
 <template>
-    <main class="flex flex-col items-center w-full min-w-0 checkered-background">
-        <ClientOnly>
-            <!-- <div class="h-[320]" v-if="!loaded">coucou</div> -->
-        </ClientOnly>
-        <ChristmasGameSection style="z-index: 1;" />
-        <GameBanner style="z-index: 1;" />
-        <Intro style="z-index: 1;" />
-        <Main style="z-index: 1;" />  
-    </main>
+  <p class="p-4 text-center text-gray-600 dark:text-gray-400">Redirecting to Steam…</p>
 </template>
 
 <script setup lang="ts">
-const loaded = ref(false);
+// Temporary: root should send visitors straight to Jingle Blocks on Steam.
+const JINGLE_BLOCKS_STEAM =
+  'https://store.steampowered.com/app/4498810/Jingle_Blocks/'
 
-const isLoaded = () => loaded.value = true;
+await navigateTo(JINGLE_BLOCKS_STEAM, { external: true, replace: true })
 </script>
-
-<style scoped>
-.checkered-background {
-    background-image: url('/damierbakery.png');
-    background-repeat: repeat;
-    background-size: 600px; /* Adjust this value to control the pattern size */
-    background-position: center;
-    width: 100%;
-    min-height: 100vh;
-    background-color: rgba(255, 255, 255, 0.8);
-    background-blend-mode: overlay;
-}
-</style>
